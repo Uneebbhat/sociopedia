@@ -11,8 +11,9 @@
 }
 
 .welcome__heading {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 26px;
+  line-height: 27px;
 }
 
 input {
@@ -25,6 +26,10 @@ input {
 
 input:focus-visible {
   outline: none;
+}
+
+.name__form {
+  display: flex;
 }
 
 .name {
@@ -40,4 +45,51 @@ input:focus-visible {
   width: 96%;
   margin-top: 30px;
   padding: 10px 14px;
+}
+
+.profile__pic {
+  border: 1px solid #8a8a8a;
+  border-radius: 8px;
+  margin: 30px 0;
+  padding: 14px;
+}
+
+.border {
+  border: 1px dashed #42d2f0;
+  border-radius: 8px;
+  padding: 28px 28px;
+}
+
+.btn {
+  background-color: #42d2f0;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sign__up {
+  color: #42d2f0;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+@media screen and (width < 768px) {
+  .name__form {
+    flex-wrap: wrap;
+  }
+
+  .name__form > * {
+    width: 100%;
+  }
+
+  .first__name {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }

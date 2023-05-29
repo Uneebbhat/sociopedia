@@ -31,7 +31,9 @@ const SignUp = () => {
               />
             </div>
             <div className="profile__pic">
-              <p>Add Picture Here</p>
+              <div className="border">
+                <p>Add Picture Here</p>
+              </div>
             </div>
             <div className="button">
               <button className="btn">Register</button>
