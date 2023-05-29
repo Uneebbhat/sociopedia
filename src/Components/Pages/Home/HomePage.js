@@ -1,9 +1,10 @@
 import React from "react";
+import "./HomePage.css";
 
 export default function MainPage() {
   return (
     <>
-      <h1>main page</h1>
+      <h1>Home page</h1>
     </>
   );
 }
