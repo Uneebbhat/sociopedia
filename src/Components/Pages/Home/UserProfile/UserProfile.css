@@ -1,0 +1,24 @@
+.user__wrapper {
+  display: flex;
+}
+
+.img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.img {
+  background-color: aqua;
+}
+
+.user__small-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.first,
+.second {
+  display: flex;
+  justify-content: space-between;
+}

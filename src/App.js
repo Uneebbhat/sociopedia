@@ -10,20 +10,20 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/"
-          element={
-            <>
-              <HomeNav />
-              <HomePage />
-            </>
-          }
-        />
-        <Route
           path="/signup"
           element={
             <>
               <Navbar />
               <SignUp />
+            </>
+          }
+        />
+        <Route
+          path="/"
+          element={
+            <>
+              <HomeNav />
+              <HomePage />
             </>
           }
         />
