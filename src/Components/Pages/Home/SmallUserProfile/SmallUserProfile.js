@@ -1,16 +1,22 @@
 import React from "react";
 import "./SmallUserProfile.css";
+
 export default function SmallUserProfile() {
+  const firstName = localStorage.getItem("First name");
+  const lastName = localStorage.getItem("Last name");
+
   return (
     <>
       <div className="small__profile-wrapper">
         <div className="user__wrapper">
           <div className="user">
             <div className="user__img">
-              <img src="/img/me.png" alt="user picture" />
+              <img src="/img/me.png" alt="user" />
             </div>
             <div className="about__user">
-              <h4>Uneeb Bhatti</h4>
+              <h4>
+                {firstName} {lastName}
+              </h4>
               <p>0 Followers</p>
             </div>
           </div>

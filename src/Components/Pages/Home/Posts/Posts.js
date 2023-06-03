@@ -1,9 +1,14 @@
 import React from "react";
+import NewPost from "./NewPost/NewPost";
+import PostData from "./PostData/PostData";
 
 export default function Posts() {
   return (
     <>
-      <h1>This is new post</h1>
+      <div className="post__wrapper">
+        <NewPost />
+        <PostData />
+      </div>
     </>
   );
 }

@@ -1,5 +1,6 @@
 .main__wrapper {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 90px;
 }

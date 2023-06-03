@@ -1,0 +1,40 @@
+.post__data-wrapper {
+  margin-top: 30px;
+}
+
+.user__img-post img {
+  max-width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.user__Name {
+  margin-left: 10px;
+}
+
+.user__post {
+  display: flex;
+  align-items: center;
+}
+
+.post__img img {
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.user__post p {
+  margin-left: 10px;
+}
+
+.post__heading {
+  margin: 10px 0;
+}
+
+.post__review {
+  display: flex;
+  margin-top: 10px;
+}
+
+.post__review > :nth-child(2) {
+  padding: 0 50px;
+}
