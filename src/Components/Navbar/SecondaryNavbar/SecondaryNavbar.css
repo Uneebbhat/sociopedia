@@ -1,0 +1,6 @@
+.navbar {
+  background-color: #1e1e1e;
+  padding: 28px 0;
+  display: grid;
+  place-items: center;
+}

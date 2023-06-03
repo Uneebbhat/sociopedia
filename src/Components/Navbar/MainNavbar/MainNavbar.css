@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #1e1e1e;
+  /* padding: 28px 0; */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 90px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right img {
+  margin-right: 2rem;
+}
+
+select {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,38 @@
+p {
+  font-weight: normal;
+}
+
+.user__wrapper {
+  background-color: #181818;
+  padding: 20px 15px;
+  border-radius: 8px;
+  margin-top: 25px;
+  position: sticky;
+  top: 25px;
+}
+
+.user__img img {
+  max-width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.user {
+  display: flex;
+  column-gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.about__user {
+  margin-top: 10px;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5rem;
+}
