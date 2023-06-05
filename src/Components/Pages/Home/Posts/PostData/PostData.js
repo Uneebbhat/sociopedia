@@ -7,7 +7,16 @@ export default function PostData() {
   const imageApi = "https://jsonplaceholder.typicode.com/photos";
   const [userData, setUserData] = useState([]);
   const [postData, setPostData] = useState([]);
-  const [imageData, setImageData] = useState([]);
+  const [imageData, setImageData] = useState(0);
+
+  const [likes, setLikes] = useState({});
+
+  const handleClickLike = (postId) => {
+    setLikes((prevLikes) => ({
+      ...prevLikes,
+      [postId]: (prevLikes[postId] || 0) + 1,
+    }));
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,40 +47,41 @@ export default function PostData() {
     <>
       <div className="post__data-wrapper">
         <div className="post__data">
-          <div className="user__wrapper">
-            {userData.map((user, index) => (
-              <div className="post__data-wrapper">
-                <div className="post__data">
-                  <div className="user__wrapper">
-                    <div className="user__post" key={index}>
-                      <div className="user__img-post">
-                        <img src="/img/me.png" alt="user" />
-                      </div>
-                      <div className="about__user-post">
-                        <h4 className="user__Name">{user.name}</h4>
-                      </div>
+          {userData.map((user, index) => (
+            <div className="post__data-wrapper" key={index}>
+              <div className="post__data">
+                <div className="user__wrapper">
+                  <div className="user__post">
+                    <div className="user__img-post">
+                      <img src="/img/me.png" alt="user" />
                     </div>
-                    <div className="about__post">
-                      <div className="post__heading">
-                        <h5>{postData[index]?.title}</h5>
-                      </div>
-                      <div className="post__img">
-                        <img src={imageData[index]?.url} alt="" />
-                      </div>
+                    <div className="about__user-post">
+                      <h4 className="user__Name">{user.name}</h4>
                     </div>
-                    <div className="post__review">
-                      <div className="like">
-                        <img src="/img/like.svg" alt="" />
-                      </div>
-                      <div className="comment">
-                        <img src="/img/comment.svg" alt="" />
-                      </div>
+                  </div>
+                  <div className="about__post">
+                    <div className="post__heading">
+                      <h5>{postData[index]?.title}</h5>
+                    </div>
+                    <div className="post__img">
+                      <img src={imageData[index]?.url} alt="" />
+                    </div>
+                  </div>
+                  <div className="post__review">
+                    <div
+                      className="like"
+                      onClick={() => handleClickLike(index)}>
+                      <img src="/img/like.svg" alt="" />
+                      <span>{likes[index] || 0}</span>
+                    </div>
+                    <div className="comment">
+                      <img src="/img/comment.svg" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

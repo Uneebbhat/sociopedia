@@ -35,6 +35,10 @@
   margin-top: 10px;
 }
 
-.post__review > :nth-child(2) {
+.post__review> :nth-child(2) {
   padding: 0 50px;
+}
+
+.like span {
+  margin-left: 10px;
 }
