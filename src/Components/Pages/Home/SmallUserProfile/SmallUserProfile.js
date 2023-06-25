@@ -4,6 +4,7 @@ import "./SmallUserProfile.css";
 export default function SmallUserProfile() {
   const firstName = localStorage.getItem("First name");
   const lastName = localStorage.getItem("Last name");
+  const storedImage = localStorage.getItem("uploadedImage");
 
   return (
     <>
@@ -11,7 +12,7 @@ export default function SmallUserProfile() {
         <div className="user__wrapper">
           <div className="user">
             <div className="user__img">
-              <img src="/img/me.png" alt="user" />
+              <img src={storedImage} alt="user" />
             </div>
             <div className="about__user">
               <h4>

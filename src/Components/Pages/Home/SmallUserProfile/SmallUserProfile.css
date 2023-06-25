@@ -1,3 +1,8 @@
+.small__profile-wrapper {
+  position: sticky;
+  top: 10px;
+}
+
 p {
   font-weight: normal;
 }
@@ -6,8 +11,6 @@ p {
   background-color: #181818;
   padding: 20px 15px;
   border-radius: 8px;
-  position: sticky;
-  top: 25px;
 }
 
 .user__img img {

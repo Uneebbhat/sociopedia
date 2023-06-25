@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./PostData.css";
+import UserNewPost from "./UserNewPost/UserNewPost";
 
 export default function PostData() {
   const userApi = "https://jsonplaceholder.typicode.com/users";
@@ -45,6 +46,7 @@ export default function PostData() {
 
   return (
     <>
+      <UserNewPost />
       <div className="post__data-wrapper">
         <div className="post__data">
           {userData.map((user, index) => (

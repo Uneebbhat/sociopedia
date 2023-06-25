@@ -8,7 +8,7 @@ export default function MainPage() {
   return (
     <>
       <div className="main__wrapper">
-        <SmallUserProfile />
+        <SmallUserProfile className="small-user-profile" />
         <Posts />
         <FriendList />
       </div>

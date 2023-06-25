@@ -18,16 +18,19 @@
 
 input {
   border-radius: 50px;
-  background-color: rgba(217, 217, 217, 0.5);
+  background-color: rgba(128, 128, 128, 0.334);
   color: white;
   width: 400px;
   margin-left: 10px;
+  border: 0;
+  outline: 0;
 }
 
 .post__icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .post__icons img {

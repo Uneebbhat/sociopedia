@@ -42,6 +42,8 @@ export default function SignUp() {
     localStorage.setItem("Last name", lastName);
     localStorage.setItem("Email", email);
     localStorage.setItem("Password", password);
+
+    window.location.href = "/"; // Redirect to the main page
   };
 
   return (

@@ -39,6 +39,10 @@
   padding: 0 50px;
 }
 
+.like img {
+  cursor: pointer;
+}
+
 .like span {
   margin-left: 10px;
 }
